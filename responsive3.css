@@ -1,0 +1,130 @@
+
+@media screen and (max-width: 600px) {
+    body {
+      width: 100vw;
+      height: 100vh;
+      text-align: center;
+      font-family: "Lucida Console", "Courier New", monospace;
+      color: black;
+      font-weight: bold;
+    }
+  
+    header,
+    nav,
+    footer {
+      height: 10vh;
+      line-height: 30px;
+      background-color: rgb(162, 209, 190);
+      border: solid #12521c;
+    }
+  
+    nav,
+    footer {
+      margin-top: 10px;
+      border: #7f007f solid;
+    }
+  
+
+    main {
+      margin-top: 10px;
+      height: 30vh;
+      line-height: 30vh;
+      background-color: rgb(162, 209, 190);
+      border:solid #12521c;
+
+    }
+  
+    .one,
+    .two,
+    .three {
+      display: flex;
+      flex-direction: column;
+      background-color: rgb(162, 209, 190);
+      margin-top: 10px;
+      height: 10vh;
+      line-height: 10vh;
+      border: solid #12521c;
+
+    }
+  }
+  
+  @media screen and (min-width: 601px) {
+    body {
+      height: 100vh;
+      font-family: "Lucida Console", "Courier New", monospace;
+      font-size: large;
+      font-weight: bold;
+      text-align: center;
+      color: black;
+    }
+  
+    nav,
+    footer,
+    header {
+      height: 40px;
+      line-height: 40px;
+      background-color: rgb(162, 209, 190);
+      margin-bottom: 10px;
+      border: solid #12521c;
+
+    }
+  
+    .container {
+      margin-bottom: 10px;
+      display: flex;
+      height: 80vh;
+      line-height: 80vh;
+  
+      main {
+        flex: 0 0 70vw;
+        background-color: rgb(162, 209, 190);
+        border: solid #12521c;
+
+      }
+  
+      aside {
+        display: flex;
+        margin-left: 10px;
+        flex-wrap: wrap;
+        width: 100vw;
+      }
+  
+      article {
+        height: 200px;
+        background-color: rgb(162, 209, 190);
+        border: solid #12521c;
+
+      }
+  
+      .one,
+      .two,
+      .three {
+          border: solid #12521c;
+        background-color: rgb(162, 209, 190);
+        width: 10vw;
+      }
+  
+      .one {
+          border: #12521c solid;
+        margin-right: 10px;
+      }
+  
+      .one,
+      .two {
+          border: #12521c solid;
+        flex: 1 2 auto;
+        height: 30vh;
+        line-height: 30vh;
+        align-content: space-between
+      }
+  
+      .three {
+          border: #12521c solid;
+        flex: 1 2 auto;
+        height: 49vh;
+        line-height: 49vh;
+        margin-top: 10px;
+        
+      }
+    }
+  }

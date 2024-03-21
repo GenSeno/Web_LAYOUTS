@@ -1,0 +1,52 @@
+/* Common styles for body *, nav, header, footer */
+body *,
+nav,
+header,
+footer {
+    border: 4px #12521c;
+    background-color: rgb(162, 209, 190);
+    height: auto; /* Change to auto height */
+    margin: 10px;
+    text-align: center;
+    font-size: 2rem;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+footer,
+header {
+    height: 20vh;
+}
+
+nav {
+    height: 10vh;
+}
+
+main {
+    background-color: white;
+    height: auto; /* Change to auto height */
+    width: 99%;
+    border: 4px #12521c;
+    margin: 9.5px;
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap */
+}
+
+aside,
+section {
+    flex-grow: 1;
+    height: 30vh; /* Equal height for both sections on smaller screens */
+    margin: 5px; /* Space between sections */
+}
+
+/* Media query for smaller devices */
+@media only screen and (max-width: 600px) {
+    aside,
+    section {
+        width: 90%; /* Full width on smaller screens */
+        margin: 5px auto; /* Center and remove horizontal margin, keep vertical margin */
+        height: 15vh;
+    }
+    nav, header, footer{
+        height: 15vh;
+    }
+}
